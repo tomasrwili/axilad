@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: horsx
+  name: kyent
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: horsx
+      app: kyent
   template:
     metadata:
       labels:
-        app: horsx
+        app: kyent
     spec:
       containers:
-      - image: okteto.dev/horsx:latest
-        name: horsx
+      - image: okteto.dev/kyent:latest
+        name: kyent
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
+          value: "f5249d33-c97e-4bda-a55f-e4cbbf217a18"
         - name: Vless_Path
           value: "/bjnd"
         - name: Vmess_UUID
-          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
+          value: "f5249d33-c97e-4bda-a55f-e4cbbf217a18"
         - name: Vmess_Path
           value: "/tboss"
         - name: Share_Path
