@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bencr
+  name: leety
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bencr
+      app: leety
   template:
     metadata:
       labels:
-        app: bencr
+        app: leety
     spec:
       containers:
-      - image: okteto.dev/bencr:latest
-        name: bencr
+      - image: okteto.dev/leety:latest
+        name: leety
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b2ed6ef0-e5d9-49c7-bede-12b1fe186c50"
+          value: "cbf04ac4-0b64-44b5-9da7-b1665885af42"
         - name: Vless_Path
           value: "/qergh"
         - name: Vmess_UUID
-          value: "b2ed6ef0-e5d9-49c7-bede-12b1fe186c50"
+          value: "cbf04ac4-0b64-44b5-9da7-b1665885af42"
         - name: Vmess_Path
           value: "/zvbge"
         - name: Share_Path
