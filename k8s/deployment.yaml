@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bashe
+  name: mbjgt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bashe
+      app: mbjgt
   template:
     metadata:
       labels:
-        app: bashe
+        app: mbjgt
     spec:
       containers:
-      - image: okteto.dev/bashe:latest
-        name: bashe
+      - image: okteto.dev/mbjgt:latest
+        name: mbjgt
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b2903d29-7b4d-4a5e-ab1c-df3ce60c7a28"
+          value: "508aa9b1-4d56-4ae0-ad6d-f05edc39383f"
         - name: Vless_Path
           value: "/qergh"
         - name: Vmess_UUID
-          value: "b2903d29-7b4d-4a5e-ab1c-df3ce60c7a28"
+          value: "508aa9b1-4d56-4ae0-ad6d-f05edc39383f"
         - name: Vmess_Path
           value: "/zvbge"
         - name: Share_Path
