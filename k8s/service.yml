@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bashe
+  name: mbjgt
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bashe"
+  - name: "mbjgt"
     port: 8080
   selector:
-    app: bashe
+    app: mbjgt
