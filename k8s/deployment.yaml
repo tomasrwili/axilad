@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nieim
+  name: jrigr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nieim
+      app: jrigr
   template:
     metadata:
       labels:
-        app: nieim
+        app: jrigr
     spec:
       containers:
-      - image: okteto.dev/nieim:latest
-        name: nieim
+      - image: okteto.dev/jrigr:latest
+        name: jrigr
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "86af63cd-f656-4ac7-bddc-3a39b0c3d0cf"
+          value: "4e75ae03-e1fb-4603-b0a5-6c7cb7ce0a32"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "86af63cd-f656-4ac7-bddc-3a39b0c3d0cf"
+          value: "4e75ae03-e1fb-4603-b0a5-6c7cb7ce0a32"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
