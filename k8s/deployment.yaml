@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dafg
+  name: milsy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dafg
+      app: milsy
   template:
     metadata:
       labels:
-        app: dafg
+        app: milsy
     spec:
       containers:
-      - image: okteto.dev/dafg:latest
-        name: dafg
+      - image: okteto.dev/milsy:latest
+        name: milsy
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "9121295a-5e2a-494c-a30c-e35a85437591"
+          value: "9488d576-cb32-442d-ad46-f53ae335958c"
         - name: Vless_Path
           value: "/hyjv"
         - name: Vmess_UUID
-          value: "9121295a-5e2a-494c-a30c-e35a85437591"
+          value: "9488d576-cb32-442d-ad46-f53ae335958c"
         - name: Vmess_Path
           value: "/tsdf1"
         - name: Share_Path
