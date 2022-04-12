@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rjhtjo
+  name: horsx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rjhtjo
+      app: horsx
   template:
     metadata:
       labels:
-        app: rjhtjo
+        app: horsx
     spec:
       containers:
-      - image: okteto.dev/rjhtjo:latest
-        name: rjhtjo
+      - image: okteto.dev/horsx:latest
+        name: horsx
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "848cc0a7-9c87-4bcc-855c-35202b51d5e3"
+          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
         - name: Vless_Path
           value: "/hyjv"
         - name: Vmess_UUID
-          value: "848cc0a7-9c87-4bcc-855c-35202b51d5e3"
+          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
         - name: Vmess_Path
           value: "/tsdf1"
         - name: Share_Path
