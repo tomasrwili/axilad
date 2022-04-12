@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lszx
+  name: dafg
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "lszx"
+  - name: "dafg"
     port: 8080
   selector:
-    app: lszx
+    app: dafg
