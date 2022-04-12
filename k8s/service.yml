@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: obhfs
+  name: hdgx
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "obhfs"
+  - name: "hdgx"
     port: 8080
   selector:
-    app: obhfs
+    app: hdgx
