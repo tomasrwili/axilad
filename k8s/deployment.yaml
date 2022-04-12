@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hertoo
+  name: ythtry
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hertoo
+      app: ythtry
   template:
     metadata:
       labels:
-        app: hertoo
+        app: ythtry
     spec:
       containers:
-      - image: okteto.dev/hertoo:latest
-        name: hertoo
+      - image: okteto.dev/ythtry:latest
+        name: ythtry
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "cc85b6cc-ecbd-4904-9dd8-c93baf87ffdc"
+          value: "4fdfeb42-fe91-4e4b-9027-1fe46f272add"
         - name: Vless_Path
           value: "/hyjv"
         - name: Vmess_UUID
-          value: "cc85b6cc-ecbd-4904-9dd8-c93baf87ffdc"
+          value: "4fdfeb42-fe91-4e4b-9027-1fe46f272add"
         - name: Vmess_Path
           value: "/tsdf1"
         - name: Share_Path
