@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: majim
+  name: admi
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "majim"
+  - name: "admi"
     port: 8080
   selector:
-    app: majim
+    app: admi
