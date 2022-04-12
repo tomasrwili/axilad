@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ojjgdh
+  name: ljgda
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ojjgdh
+      app: ljgda
   template:
     metadata:
       labels:
-        app: ojjgdh
+        app: ljgda
     spec:
       containers:
-      - image: okteto.dev/ojjgdh:latest
-        name: ojjgdh
+      - image: okteto.dev/ljgda:latest
+        name: ljgda
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "1de3fb7b-eaaa-41aa-b2b5-234e8f6efe20"
+          value: "89b2f030-14e6-4b73-a71b-09efacfc6655"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "1de3fb7b-eaaa-41aa-b2b5-234e8f6efe20"
+          value: "89b2f030-14e6-4b73-a71b-09efacfc6655"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
