@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: milsy
+  name: dorler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: milsy
+      app: dorler
   template:
     metadata:
       labels:
-        app: milsy
+        app: dorler
     spec:
       containers:
-      - image: okteto.dev/milsy:latest
-        name: milsy
+      - image: okteto.dev/dorler:latest
+        name: dorler
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "9488d576-cb32-442d-ad46-f53ae335958c"
+          value: "617f8057-fb6e-409a-a6e2-0580658fa67b"
         - name: Vless_Path
           value: "/hyjv"
         - name: Vmess_UUID
-          value: "9488d576-cb32-442d-ad46-f53ae335958c"
+          value: "617f8057-fb6e-409a-a6e2-0580658fa67b"
         - name: Vmess_Path
           value: "/tsdf1"
         - name: Share_Path
