@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ldhrj
+  name: nieim
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ldhrj
+      app: nieim
   template:
     metadata:
       labels:
-        app: ldhrj
+        app: nieim
     spec:
       containers:
-      - image: okteto.dev/ldhrj:latest
-        name: ldhrj
+      - image: okteto.dev/nieim:latest
+        name: nieim
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b8333f95-cff9-42e5-8965-6d342cecba2b"
+          value: "86af63cd-f656-4ac7-bddc-3a39b0c3d0cf"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "b8333f95-cff9-42e5-8965-6d342cecba2b"
+          value: "86af63cd-f656-4ac7-bddc-3a39b0c3d0cf"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
