@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mbjgt
+  name: bencr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mbjgt
+      app: bencr
   template:
     metadata:
       labels:
-        app: mbjgt
+        app: bencr
     spec:
       containers:
-      - image: okteto.dev/mbjgt:latest
-        name: mbjgt
+      - image: okteto.dev/bencr:latest
+        name: bencr
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "508aa9b1-4d56-4ae0-ad6d-f05edc39383f"
+          value: "b2ed6ef0-e5d9-49c7-bede-12b1fe186c50"
         - name: Vless_Path
           value: "/qergh"
         - name: Vmess_UUID
-          value: "508aa9b1-4d56-4ae0-ad6d-f05edc39383f"
+          value: "b2ed6ef0-e5d9-49c7-bede-12b1fe186c50"
         - name: Vmess_Path
           value: "/zvbge"
         - name: Share_Path
