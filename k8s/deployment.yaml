@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nbror
+  name: bashe
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nbror
+      app: bashe
   template:
     metadata:
       labels:
-        app: nbror
+        app: bashe
     spec:
       containers:
-      - image: okteto.dev/nbror:latest
-        name: nbror
+      - image: okteto.dev/bashe:latest
+        name: bashe
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "57c52037-df92-403f-8c41-56696358552f"
+          value: "b2903d29-7b4d-4a5e-ab1c-df3ce60c7a28"
         - name: Vless_Path
           value: "/qergh"
         - name: Vmess_UUID
-          value: "57c52037-df92-403f-8c41-56696358552f"
+          value: "b2903d29-7b4d-4a5e-ab1c-df3ce60c7a28"
         - name: Vmess_Path
           value: "/zvbge"
         - name: Share_Path
