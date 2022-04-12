@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kyent
+  name: weyesk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kyent
+      app: weyesk
   template:
     metadata:
       labels:
-        app: kyent
+        app: weyesk
     spec:
       containers:
-      - image: okteto.dev/kyent:latest
-        name: kyent
+      - image: okteto.dev/weyesk:latest
+        name: weyesk
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "f5249d33-c97e-4bda-a55f-e4cbbf217a18"
+          value: "6271009e-5b37-4eb9-8762-82cf9422da05"
         - name: Vless_Path
           value: "/bjnd"
         - name: Vmess_UUID
-          value: "f5249d33-c97e-4bda-a55f-e4cbbf217a18"
+          value: "6271009e-5b37-4eb9-8762-82cf9422da05"
         - name: Vmess_Path
           value: "/tboss"
         - name: Share_Path
