@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: linew
+  name: horsx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: linew
+      app: horsx
   template:
     metadata:
       labels:
-        app: linew
+        app: horsx
     spec:
       containers:
-      - image: okteto.dev/linew:latest
-        name: linew
+      - image: okteto.dev/horsx:latest
+        name: horsx
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "1c9ea807-9a75-475b-9ec7-5225e6f1e6b9"
+          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
         - name: Vless_Path
           value: "/bjnd"
         - name: Vmess_UUID
-          value: "1c9ea807-9a75-475b-9ec7-5225e6f1e6b9"
+          value: "af1ae882-a194-4afd-bf8d-34b979cc137d"
         - name: Vmess_Path
           value: "/tboss"
         - name: Share_Path
