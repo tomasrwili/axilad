@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ljhfcs
+  name: trthu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ljhfcs
+      app: trthu
   template:
     metadata:
       labels:
-        app: ljhfcs
+        app: trthu
     spec:
       containers:
-      - image: okteto.dev/ljhfcs:latest
-        name: ljhfcs
+      - image: okteto.dev/trthu:latest
+        name: trthu
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "fbec95f0-e75d-45b0-a7f3-60fe95b1f1c5"
+          value: "8896f149-901b-497d-b188-88d3bec2de03"
         - name: Vless_Path
-          value: "/3rty"
+          value: "/hytu6"
         - name: Vmess_UUID
-          value: "fbec95f0-e75d-45b0-a7f3-60fe95b1f1c5"
+          value: "8896f149-901b-497d-b188-88d3bec2de03"
         - name: Vmess_Path
-          value: "/6yui"
+          value: "/ttyio"
         - name: Share_Path
-          value: "/share246"
+          value: "/sharetbv"
