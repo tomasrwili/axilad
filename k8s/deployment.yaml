@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ythgrg
+  name: ringt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ythgrg
+      app: ringt
   template:
     metadata:
       labels:
-        app: ythgrg
+        app: ringt
     spec:
       containers:
-      - image: okteto.dev/ythgrg:latest
-        name: ythgrg
+      - image: okteto.dev/ringtg:latest
+        name: ringt
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "a2745297-792f-4c7e-b0e7-5baef3cc7d63"
+          value: "967e9443-8a5c-4b9b-b741-61a7d26e500a"
         - name: Vless_Path
           value: "/hytu6"
         - name: Vmess_UUID
-          value: "a2745297-792f-4c7e-b0e7-5baef3cc7d63"
+          value: "967e9443-8a5c-4b9b-b741-61a7d26e500a"
         - name: Vmess_Path
           value: "/ttyio"
         - name: Share_Path
