@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xwnj
+  name: nbror
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xwnj
+      app: nbror
   template:
     metadata:
       labels:
-        app: xwnj
+        app: nbror
     spec:
       containers:
-      - image: okteto.dev/xwnj:latest
-        name: xwnj
+      - image: okteto.dev/nbror:latest
+        name: nbror
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "868288eb-0a86-4c2c-ae68-3afd130ca0a9"
+          value: "57c52037-df92-403f-8c41-56696358552f"
         - name: Vless_Path
-          value: "/bjnd"
+          value: "/qergh"
         - name: Vmess_UUID
-          value: "868288eb-0a86-4c2c-ae68-3afd130ca0a9"
+          value: "57c52037-df92-403f-8c41-56696358552f"
         - name: Vmess_Path
-          value: "/tboss"
+          value: "/zvbge"
         - name: Share_Path
-          value: "/shareg3kl"
+          value: "/sharegjhot"
