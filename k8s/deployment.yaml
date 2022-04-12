@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jkhyf
+  name: ljhfcs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jkhyf
+      app: ljhfcs
   template:
     metadata:
       labels:
-        app: jkhyf
+        app: ljhfcs
     spec:
       containers:
-      - image: okteto.dev/jkhyf:latest
-        name: jkhyf
+      - image: okteto.dev/ljhfcs:latest
+        name: ljhfcs
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "ea3d6922-12bf-485a-822b-4ad74bca663c"
+          value: "fbec95f0-e75d-45b0-a7f3-60fe95b1f1c5"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "ea3d6922-12bf-485a-822b-4ad74bca663c"
+          value: "fbec95f0-e75d-45b0-a7f3-60fe95b1f1c5"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
