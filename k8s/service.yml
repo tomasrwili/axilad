@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kyent
+  name: weyesk
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "kyent"
+  - name: "weyesk"
     port: 8080
   selector:
-    app: kyent
+    app: weyesk
