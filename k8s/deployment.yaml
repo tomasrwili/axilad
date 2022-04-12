@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jrigr
+  name: jgfjd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jrigr
+      app: jgfjd
   template:
     metadata:
       labels:
-        app: jrigr
+        app: jgfjd
     spec:
       containers:
-      - image: okteto.dev/jrigr:latest
-        name: jrigr
+      - image: okteto.dev/jgfjd:latest
+        name: jgfjd
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "4e75ae03-e1fb-4603-b0a5-6c7cb7ce0a32"
+          value: "ad2f0a02-c670-4ead-8e35-51702a01fdd8"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "4e75ae03-e1fb-4603-b0a5-6c7cb7ce0a32"
+          value: "ad2f0a02-c670-4ead-8e35-51702a01fdd8"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
