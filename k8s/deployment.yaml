@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: admi
+  name: ldhrj
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: admi
+      app: ldhrj
   template:
     metadata:
       labels:
-        app: admi
+        app: ldhrj
     spec:
       containers:
-      - image: okteto.dev/admi:latest
-        name: admi
+      - image: okteto.dev/ldhrj:latest
+        name: ldhrj
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "8b35e48e-c638-41d9-9584-de02810e1d8c"
+          value: "b8333f95-cff9-42e5-8965-6d342cecba2b"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "8b35e48e-c638-41d9-9584-de02810e1d8c"
+          value: "b8333f95-cff9-42e5-8965-6d342cecba2b"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
