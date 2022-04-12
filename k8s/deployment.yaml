@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rwbjr
+  name: ttghg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rwbjr
+      app: ttghg
   template:
     metadata:
       labels:
-        app: rwbjr
+        app: ttghg
     spec:
       containers:
-      - image: okteto.dev/rwbjr:latest
-        name: rwbjr
+      - image: okteto.dev/ttghg:latest
+        name: ttghg
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "8019ae93-0778-4ba1-81b7-3dc29a9b20cb"
+          value: "162738b6-e156-4930-b6a9-2bb242bb0a97"
         - name: Vless_Path
           value: "/hyjv"
         - name: Vmess_UUID
-          value: "8019ae93-0778-4ba1-81b7-3dc29a9b20cb"
+          value: "162738b6-e156-4930-b6a9-2bb242bb0a97"
         - name: Vmess_Path
           value: "/tsdf1"
         - name: Share_Path
