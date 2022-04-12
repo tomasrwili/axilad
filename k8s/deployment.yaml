@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: majim
+  name: admi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: majim
+      app: admi
   template:
     metadata:
       labels:
-        app: majim
+        app: admi
     spec:
       containers:
-      - image: okteto.dev/majim:latest
-        name: majim
+      - image: okteto.dev/admi:latest
+        name: admi
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "ea2fbf82-4f5e-4aa9-9265-3f02a328dbcc"
+          value: "8b35e48e-c638-41d9-9584-de02810e1d8c"
         - name: Vless_Path
           value: "/3rty"
         - name: Vmess_UUID
-          value: "ea2fbf82-4f5e-4aa9-9265-3f02a328dbcc"
+          value: "8b35e48e-c638-41d9-9584-de02810e1d8c"
         - name: Vmess_Path
           value: "/6yui"
         - name: Share_Path
