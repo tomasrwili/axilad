@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lbhds
+  name: fdhjk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lbhds
+      app: fdhjk
   template:
     metadata:
       labels:
-        app: lbhds
+        app: fdhjk
     spec:
       containers:
-      - image: okteto.dev/lbhds:latest
-        name: lbhds
+      - image: okteto.dev/fdhjk:latest
+        name: fdhjk
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "6fc682a0-27b0-42ff-ba2b-8bb206eeafbd"
+          value: "44924cd9-be93-4ae7-ac74-46cdda7b86e9"
         - name: Vless_Path
-          value: "/hytu6"
+          value: "/hyjv"
         - name: Vmess_UUID
-          value: "6fc682a0-27b0-42ff-ba2b-8bb206eeafbd"
+          value: "44924cd9-be93-4ae7-ac74-46cdda7b86e9"
         - name: Vmess_Path
-          value: "/ttyio"
+          value: "/tsdf1"
         - name: Share_Path
-          value: "/sharetbv"
+          value: "/share6gh"
