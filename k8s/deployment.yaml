@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ttghg
+  name: rjhtjo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ttghg
+      app: rjhtjo
   template:
     metadata:
       labels:
-        app: ttghg
+        app: rjhtjo
     spec:
       containers:
-      - image: okteto.dev/ttghg:latest
-        name: ttghg
+      - image: okteto.dev/rjhtjo:latest
+        name: rjhtjo
         ports:
         - containerPort: 8080
         env:
