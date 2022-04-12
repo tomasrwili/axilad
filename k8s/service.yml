@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rwbjr
+  name: ttghg
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "rwbjr"
+  - name: "ttghg"
     port: 8080
   selector:
-    app: rwbjr
+    app: ttghg
