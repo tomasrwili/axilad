@@ -13,7 +13,7 @@ spec:
         app: ringt
     spec:
       containers:
-      - image: okteto.dev/ringtg:latest
+      - image: okteto.dev/ringt:latest
         name: ringt
         ports:
         - containerPort: 8080
