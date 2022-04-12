@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: obhfs
+  name: hdgx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: obhfs
+      app: hdgx
   template:
     metadata:
       labels:
-        app: obhfs
+        app: hdgx
     spec:
       containers:
-      - image: okteto.dev/obhfs:latest
-        name: obhfs
+      - image: okteto.dev/hdgx:latest
+        name: hdgx
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "910717e0-e887-4112-8386-30990140851b"
+          value: "326136ab-707a-4b66-a9d1-46d076df7c9c"
         - name: Vless_Path
           value: "/hytu6"
         - name: Vmess_UUID
-          value: "910717e0-e887-4112-8386-30990140851b"
+          value: "326136ab-707a-4b66-a9d1-46d076df7c9c"
         - name: Vmess_Path
           value: "/ttyio"
         - name: Share_Path
