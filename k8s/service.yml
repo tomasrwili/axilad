@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bencr
+  name: leety
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bencr"
+  - name: "leety"
     port: 8080
   selector:
-    app: bencr
+    app: leety
