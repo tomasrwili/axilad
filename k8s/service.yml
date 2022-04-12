@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jrigr
+  name: jgfjd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "jrigr"
+  - name: "jgfjd"
     port: 8080
   selector:
-    app: jrigr
+    app: jgfjd
